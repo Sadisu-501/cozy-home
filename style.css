@@ -516,7 +516,7 @@ span > img {
   }
 
   .nav-container-3 h1 {
-    font-size: 1.5rem;
+    font-size: 1.1rem;
     margin-bottom: 1rem;
   }
   .nav-container-3 p {
@@ -525,8 +525,8 @@ span > img {
     letter-spacing: 0.07rem;
   }
   .nav-container-3 img {
-    height: 15rem;
-    width: 25rem;
+    height: 10rem;
+    width: 20rem;
     margin-bottom: 0rem;
     margin-left: 0rem;
   }
@@ -534,7 +534,7 @@ span > img {
     background-color: rgb(213, 173, 143);
     border-radius: 50px;
     padding: 1rem;
-    width: 100%;
+    width: 80%;
     font-size: large;
     font-weight: bold;
   }
@@ -553,6 +553,10 @@ span > img {
     margin: 100px 0px 0px 0px;
     font-family: Arial, Helvetica, sans-serif;
   }
+  .about-container img {
+    height: 20rem;
+    width: 15rem;
+  }
   .about-container h2 {
     font-size: 1.5rem;
     letter-spacing: 0.03rem;
@@ -563,7 +567,7 @@ span > img {
   .div-title {
     display: flex;
     align-items: center;
-    text-wrap: nowrap;
+    font-size: 0.8rem;
     justify-content: center;
     margin: 100px 0px 100px 0px;
     font-family: Arial, Helvetica, sans-serif;
@@ -582,7 +586,17 @@ span > img {
   .div-container img {
     width: 100px;
   }
-
+  .select-items {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .dog-btn button {
+    display: none;
+  }
+  .dog-btn p {
+    font-weight: bold;
+  }
   .before-footer-container {
     display: flex;
     flex-direction: column;
@@ -596,7 +610,9 @@ span > img {
   .before-footer-img {
     display: none;
   }
-
+  .before-footer-image {
+    /* display: flex; */
+  }
   .before-footer-contents {
     margin-bottom: 5rem;
     font-family: Arial, Helvetica, sans-serif;
@@ -635,9 +651,9 @@ span > img {
     margin-top: -30px;
   }
   .fut-img img {
-    height: 30vh;
-    width: 80vw;
-    margin-bottom: -40px;
+    height: 20vh;
+    width: 70vw;
+    margin-bottom: 0px;
     margin-left: 40px;
   }
 }
