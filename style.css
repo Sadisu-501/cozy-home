@@ -653,7 +653,10 @@ span > img {
   .fut-img img {
     height: 20vh;
     width: 70vw;
-    margin-bottom: 0px;
-    margin-left: 40px;
+    position: relative;
+    left: 0;
+    /* bottom:0; */
+    /* top: 0; */
+    right: 0;
   }
 }
