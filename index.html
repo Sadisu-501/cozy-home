@@ -4,19 +4,23 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cozy House</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
     <script defer src="index.js"></script>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <header>
       <!--Navigation section-->
-      <nav class="contentPadding">
+      <nav>
         <div class="nav-container">
-          <div class="nav-contents">
+          <div class="nav-logo">
             <h2>Cozy House</h2>
             <p>Shelter for Pets in Boston</p>
           </div>
-          <div class="nav-content-2">
+          <div class="nav-contents">
             <a href="">About </a>
             <a href="">Our Pets</a>
             <a href=""> Help the Shelter</a>
@@ -25,7 +29,7 @@
 
           <!--hamburger icon-->
           <div id="hamburgerIcon" class="menuBtn">
-            <ion-icon class="icon" name="grid-outline"></ion-icon>
+            <ion-icon class="icon" name="grid"></ion-icon>
           </div>
           <div id="menu" class="menu close">
             <a href="" target="_blank" rel="noopener noreferrer">About</a>
@@ -34,45 +38,29 @@
               >Help the shelter</a
             >
             <a href="" target="_blank" rel="noopener noreferrer">Contact</a>
+            <div class="menu-image">
+              <img src="img/Dog-5.png" alt="menu image" />
+            </div>
           </div>
         </div>
 
         <!--2nd navigation container for large screen-->
         <div class="nav-container-2">
-          <div>
+          <div class="nav-container-2-text">
             <h1>
               Not only people <br />
-              need a House
+              <span> Need a House</span>
             </h1>
             <p>
-              We offer to give a chance to a <br />
-              little and nice puppy with an extremely <br />
-              wide and open heart. He or she will love <br />you more than
+              We offer to give a chance to a little and nice puppy with an
+              extremely wide and open heart. He or she will love you more than
               anybody else in the world, you will see!
             </p>
-            <button>Make a friend</button>
+            <button type="button">Make a friend</button>
           </div>
 
-          <div>
+          <div class="nav-image-wrapper">
             <img src="img/dog-1.png" alt="dog photo" />
-          </div>
-        </div>
-        <!-- code for small screen devices -->
-        <div class="nav-container-3">
-          <div>
-            <h1>Not only people need a House</h1>
-            <div>
-              <img src="img/Dog-5.png" alt="dog photo" />
-            </div>
-            <div>
-              <p>
-                We offer to give a chance to a <br />
-                little and nice puppy with an extremely <br />
-                wide and open heart. He or she will love <br />you more than
-                anybody else in the world, you will see!
-              </p>
-            </div>
-            <button>Make a friend</button>
           </div>
         </div>
       </nav>
@@ -82,86 +70,79 @@
 
     <main>
       <div class="about-container">
-        <div>
+        <div class="about-image">
           <img src="img/dog-2.png" alt="" />
         </div>
-        <div>
-          <h2>
-            About the Shelter <br />
-            "Cozy House"
-          </h2>
+        <div class="about-shelter">
+          <h2>About the Shelter <span>"Cozy House"</span></h2>
           <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. <br />
-            Debitis adipisci voluptate dolor doloremque, delectus perspiciatis
-            <br /><br />
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis
+            adipisci voluptate dolor doloremque, delectus perspiciatis
             consectetur optio, minus nobis commodi fugit vitae asperiores.
-            <br />
+          </p>
+          <p>
             Delectus provident facilis laboriosam blanditiis modi fuga dicta
-            <br />
             quidem alias quisquam quam, dolorem deserunt, perspiciatis deleniti
-            <br />
-            <br />
-            in laborum! Debitis minus repellendus saepe quibusdam error <br />
-            exercitationem delectus assumenda! in laborum! Debitis minus
-            repellendus saepe quibusdam error <br />
-            exercitationem delectus assumenda! in laborum! Debitis minus
-            repellendus saepe quibusdam error <br />
-            exercitationem delectus assumenda! in laborum! Debitis minus
-            repellendus saepe quibusdam error <br />
-            exercitationem delectus assumenda! in laborum! Debitis minus
-            repellendus saepe quibusdam error <br />
-            <br />
-            in laborum! Debitis minus repellendus saepe quibusdam error <br />
-            exercitationem delectus assumenda! in laborum! Debitis minus
-            repellendus saepe quibusdam error <br />
+            in laborum! Debitis minus repellendus saepe quibusdam error
+            exercitationem delectus assumenda!
+          </p>
+          <p>
+            In laborum! Debitis minus repellendus saepe quibusdam error
+            exercitationem delectus assumenda! In laborum! Debitis minus
+            repellendus saepe quibusdam error exercitationem delectus assumenda!
           </p>
         </div>
       </div>
 
       <!--2nd About section-->
 
-      <div class="select-items">
-        <div class="select">
-          <h2>
-            Our Friends who <br />
-            are looking for a house
-          </h2>
-        </div>
+      <div class="body-container">
+        <h2>Our Friends who <span> are looking for a house</span></h2>
 
-        <section class="dog-btn">
-          <div class="dog-1">
-            <img src="img/dog-3.png" alt="" />
-            <p>Katrine</p>
+        <div class="body-contents">
+          <div class="dog-card">
+            <div class="dog-image">
+              <img src="img/dog-3.png" alt="Katrine" />
+              <p class="dog-name">Katrine</p>
+            </div>
             <button>Learn More</button>
           </div>
 
-          <div class="dog-2">
-            <img src="img/dog -4.png" alt="" />
-            <p>Jennifer</p>
+          <div class="dog-card">
+            <div class="dog-image">
+              <img src="img/dog -4.png" alt="Jennifer" />
+              <p class="dog-name">Jennifer</p>
+            </div>
             <button>Learn More</button>
           </div>
 
-          <div class="dog-3">
-            <img src="img/dog-3.png" alt="" />
-            <p>Woody</p>
+          <div class="dog-card">
+            <div class="dog-image">
+              <img src="img/dog-3.png" alt="Jennifer" />
+              <p class="dog-name">Catherine</p>
+            </div>
             <button>Learn More</button>
           </div>
-        </section>
 
-        <div class="last-button">
-          <button>Get to know the rest</button>
+          <div class="dog-card">
+            <div class="dog-image">
+              <img src="img/dog -4.png" alt="Woody" />
+              <p class="dog-name">Woody</p>
+            </div>
+            <button>Learn More</button>
+          </div>
         </div>
       </div>
     </main>
 
     <!--start of the main section-->
 
-    <section class="contentPadding">
+    <section>
       <div class="div-title">
         <h1>Things you can Help our shelter with</h1>
       </div>
 
-      <div class="div-container">
+      <div class="items-container">
         <div>
           <img src="img/salad.png" alt="" />
           <p>Pet food</p>
@@ -185,7 +166,7 @@
           <p>Shampoo</p>
         </div>
       </div>
-      <div class="div-container">
+      <div class="items-container">
         <div>
           <img src="img/pills.png" alt="" />
           <p>Vitamins</p>
@@ -218,7 +199,10 @@
         <!--before - footer - contents-->
         <div class="before-footer-contents">
           <div>
-            <h2>In Addition, you <br />can make a donation</h2>
+            <h3>
+              In Addition, you can make a
+              <span class="donation-highlight">Donation</span>
+            </h3>
           </div>
           <!--before - footer - button-->
           <div class="btn">
@@ -229,56 +213,46 @@
           </div>
 
           <p>
-            Lorem ipsum dolor sit amet consectetur <br />
-            adipisicing elit. Enim voluptatibus nisi itaque veniam <br />
-            optio totam! Obcaecati possimus perferendis maiores nostrum.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim
+            voluptatibus nisi itaque veniam optio totam! Obcaecati possimus
+            perferendis maiores nostrum.
           </p>
         </div>
-        <div class="before-footer-image">
+        <!-- <div class="before-footer-image">
           <img src="img/Dog-5.png" alt="a dog lying down" />
-        </div>
+        </div> -->
       </div>
     </section>
 
     <!--Footer section-->
-
     <footer>
       <div class="footer-container">
         <div class="footer-contents">
-          <div>
-            <h1>
-              For Questions <br />
-              and suggestions
-            </h1>
+          <div class="footer-text">
+            <h1>We are waiting <span>for your visit</span></h1>
           </div>
-          <div>
-            <span class="img"><img src="img/envelope.png" alt="" /></span>
-            <p>email@shelter.com</p>
-          </div>
-          <div>
-            <span class="img"><img src="img/phone-call.png" alt="" /></span>
-            <p>+ 232 458 589 22</p>
+          <div class="footer-image">
+            <img src="img/Dog-5.png" alt="Dog waiting for visitors" />
           </div>
         </div>
 
-        <div class="footer-contents">
-          <div>
-            <h1>
-              We are waiting <br />
-              for your visit
-            </h1>
-          </div>
-          <div>
-            <span><img src="img/envelope.png" alt="" /></span>
-            <p>Boston central street</p>
-          </div>
-          <div>
-            <span><img src="img/phone-call.png" alt="" /></span>
-            <p>London South Park, 18st</p>
-          </div>
+        <div class="footer-social">
+          <a href="https://facebook.com" target="_blank" aria-label="Facebook"
+            ><i class="fab fa-facebook-f"></i
+          ></a>
+          <a href="https://wa.me/" target="_blank" aria-label="WhatsApp"
+            ><i class="fa fa-envelope"></i
+          ></a>
+          <a href="https://www.tiktok.com" target="_blank" aria-label="TikTok"
+            ><i class="fa fa-phone"></i
+          ></a>
+          <a href="https://instagram.com" target="_blank" aria-label="Instagram"
+            ><i class="fab fa-instagram"></i
+          ></a>
         </div>
-        <div class="fut-img">
-          <img src="img/Dog-5.png" alt="" />
+
+        <div class="footer-bottom">
+          <p>&copy; 2025 Cozy House. All rights reserved.</p>
         </div>
       </div>
     </footer>
