@@ -7,43 +7,62 @@
   box-sizing: border-box;
 }
 
+:root {
+  --primary-font: "poppins";
+  --text-color: #f5f5f5;
+  --accent-color: rgb(213, 173, 143);
+  --dark-accent-color: rgb(180, 130, 95);
+}
+/* General styling */
+body {
+  font-family: "inter", "sans-serif";
+  font-size: 1rem;
+}
+.padding {
+  padding: 2rem 3rem;
+}
 header {
   background: linear-gradient(160deg, #0f0f0f 0%, #38281f 100%);
 }
+nav {
+  height: 90vh;
+  margin-bottom: 3rem;
+}
 
+/*  Nav containing links and logo*/
 .nav-container {
-  /*  Nav containing links and logo*/
   display: flex;
   align-items: center;
   justify-content: space-between;
-  font-family: poppins light, sans-serif;
   flex-wrap: wrap;
-  padding: 2rem 5rem;
-  margin: auto;
 }
+
 .nav-logo {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  gap: 0.2rem;
+  font-family: "sans-serif";
 }
+
 .nav-logo h2 {
   color: rgb(213, 173, 143);
-  font-size: 1.1rem;
 }
+
 .nav-logo p {
-  color: whitesmoke;
-  font-size: 0.9rem;
+  color: var(--text-color);
+  font-size: 0.8rem;
 }
 
 .nav-contents {
   display: flex;
   justify-content: center;
   align-items: center;
-  column-gap: 1rem;
+  column-gap: 1.5rem;
 }
 .nav-contents a {
   text-decoration: none;
-  color: whitesmoke;
+  color: var(--text-color);
   font-size: 0.9rem;
 }
 
@@ -59,56 +78,50 @@ header {
   display: none; /*  for small screen device*/
 }
 
-/*  Second nav contaning image and texts/button*/
+/*  hero section contaning image and texts/button*/
 
-.nav-container-2 {
+.hero-container {
   display: flex;
   align-items: center;
-  font-family: Arial, Helvetica, sans-serif;
-  justify-content: center;
-  color: whitesmoke;
-  font-size: 1.2rem;
+  justify-content: space-between;
+  color: var(--text-color);
   margin-top: 1rem;
-  padding: 0rem 5rem;
+  margin-bottom: 3rem;
+  font-family: poppins;
 }
 
-.nav-container-2 span {
+.hero-container span {
   color: #caad0a;
 }
 
-.nav-container-2 p {
+.hero-container p {
   margin-top: 15px;
   font-size: 0.9rem;
   letter-spacing: 0.02rem;
-  text-wrap: wrap;
-  margin-bottom: 0;
+  max-width: 65ch;
 }
-.nav-container-2 img {
+.hero-container img {
   width: 100%;
-  max-height: 500px;
+  max-height: 410px;
   min-width: 300px;
-  margin-bottom: -5px;
-  object-fit: cover;
 }
-.nav-container-2 button {
+
+.hero-container button {
   font-weight: bold;
-  font-family: poppins;
   background-color: rgb(213, 173, 143);
-  font-size: 1rem;
   border: none;
   border-radius: 50px;
   margin-top: 20px;
   padding: 12px;
-  width: 50%;
+  width: 100%;
   cursor: pointer;
   box-shadow: 0 2px 6px rgba(180, 130, 95, 0.5);
-  transition: background-color 300ms ease, transform 200ms ease;
+  transition: 0.5 ease;
 }
 
-.nav-container-2 button:hover {
+.hero-container button:hover {
   background-color: rgb(180, 130, 95);
-  transition-delay: 300ms;
-  transform: scale(1.05);
+  transition-delay: 200ms;
 }
 
 /*  start of the body content */
@@ -117,9 +130,8 @@ header {
   align-items: center;
   justify-content: space-between;
   gap: 5rem;
-  padding: 2rem 5rem;
-  margin: 5rem auto;
-  font-family: Arial, Helvetica, sans-serif;
+  padding: 2rem 3rem;
+  /* margin: 5rem auto; */
 }
 .about-image {
   background-color: #f39c12;
@@ -142,7 +154,7 @@ header {
   border-radius: 20px;
   box-shadow: 10px 8px rgba(180, 130, 95, 0.5);
   padding: 2rem;
-  font-family: "Poppins", sans-serif;
+  font-family: var(--primary-font);
   color: #fff;
   max-width: 800px;
   margin: 0 auto;
@@ -162,7 +174,6 @@ header {
 }
 
 .about-shelter p {
-  font-size: 1rem;
   line-height: 1.5rem;
   margin-bottom: 1rem;
 }
@@ -174,7 +185,7 @@ header {
 .body-container h2 {
   text-align: center;
   margin: 2rem auto;
-  font-family: poppins, sans-serif;
+  font-family: var(--primary-font);
   color: #fff;
 }
 .body-contents {
@@ -229,7 +240,9 @@ header {
   border-radius: 20px;
   cursor: pointer;
   box-shadow: 0 2px 6px rgba(180, 130, 95, 0.5);
-  transition: background-color 300ms ease, transform 200ms ease;
+  transition:
+    background-color 300ms ease,
+    transform 200ms ease;
 }
 
 .dog-card button:hover {
@@ -243,7 +256,6 @@ header {
   margin: auto;
   margin-top: 3rem;
   margin-bottom: 2rem;
-  font-family: Arial, Helvetica, sans-serif;
 }
 
 .items-container {
@@ -254,7 +266,6 @@ header {
   gap: 8rem;
   margin-bottom: 2rem;
   padding: 2rem 3rem;
-  font-family: Arial, Helvetica, sans-serif;
 }
 .items-container p {
   text-align: center;
@@ -280,7 +291,6 @@ header {
 }
 
 .before-footer-contents {
-  font-family: Arial, Helvetica, sans-serif;
   text-align: center;
 }
 .before-footer-contents h2 {
@@ -321,7 +331,6 @@ header {
   padding: 10px;
   width: 20vw;
   font-weight: bold;
-  font-family: nexa;
   margin-bottom: 1rem;
   cursor: pointer;
 }
@@ -337,7 +346,6 @@ header {
 .footer-container {
   background-color: darkslategray;
   padding: 2rem 5rem;
-  font-family: "Poppins", sans-serif;
   color: white;
 }
 
@@ -386,8 +394,9 @@ header {
 
 .footer-social a {
   color: #ecf0f1;
-  font-size: 24px;
-  transition: color 0.3s ease, transform 0.3s ease;
+  transition:
+    color 0.3s ease,
+    transform 0.3s ease;
 }
 
 .footer-social a:hover {
@@ -401,28 +410,6 @@ header {
   color: #bdc3c7;
 }
 
-@media screen and (max-width: 1800px) {
-  .nav-container-2 {
-    gap: 5rem;
-  }
-
-  .nav-logo h2 {
-    font-size: 1.5rem;
-  }
-  .nav-logo p {
-    font-size: 1.1rem;
-  }
-  .nav-contents a {
-    font-size: 1.5rem;
-  }
-  .about-container {
-    margin: 200px 0;
-  }
-  .about-shelter {
-    max-width: 1800px;
-  }
-}
-
 /*responsive design for large devices*/
 @media screen and (max-width: 1200px) {
   .nav-logo h2 {
@@ -433,17 +420,13 @@ header {
     font-size: 1.2rem;
   }
   .nav-logo p {
-    color: whitesmoke;
-    font-size: 1rem;
+    color: var(--text-color);
   }
 
-  .nav-container-2 {
-    font-size: 1rem;
-  }
-  .nav-container-2 p {
+  .hero-container p {
     font-size: 0.8rem;
   }
-  .nav-container-2 button {
+  .hero-container button {
     font-size: 0.9rem;
     width: 100%;
   }
@@ -453,7 +436,6 @@ header {
   }
 
   .before-footer-contents {
-    font-family: Arial, Helvetica, sans-serif;
     text-align: center;
   }
   .before-footer-contents h2 {
@@ -463,13 +445,10 @@ header {
 
 /*responsive design for small laptop devices*/
 @media screen and (max-width: 1024px) {
-  .nav-container-2 {
-    font-size: 1rem;
-  }
-  .nav-container-2 p {
+  .hero-container p {
     font-size: 0.8rem;
   }
-  .nav-container-2 button {
+  .hero-container button {
     font-size: 0.9rem;
     width: 100%;
   }
@@ -481,8 +460,6 @@ header {
     gap: 3rem;
     padding: 2rem 3rem;
     margin: 5rem auto;
-
-    font-family: Arial, Helvetica, sans-serif;
   }
 
   .about-image img {
@@ -507,10 +484,6 @@ header {
     margin-bottom: 0px;
     justify-content: center;
   }
-
-  .footer-social a {
-    font-size: 1rem;
-  }
 }
 
 /*responsive design for Tablet devices*/
@@ -522,7 +495,7 @@ header {
   .nav-container {
     padding: 1rem 2rem;
   }
-  .nav-container-2 {
+  .hero-container {
     padding: 0 2rem;
   }
   .nav-logo {
@@ -654,28 +627,27 @@ header {
     width: 300px;
     margin-top: 0;
   }
-  .nav-container-2 {
+  .hero-container {
     display: flex;
     align-items: center;
     flex-direction: column-reverse;
-    font-family: Arial, Helvetica, sans-serif;
     justify-content: center;
-    color: whitesmoke;
-    font-size: 1rem;
+    color: var(--text-color);
+
     text-align: center;
     padding: 1rem;
   }
-  .nav-container-2-text {
+  .hero-text {
     margin-top: 0;
   }
 
-  .nav-container-2 p {
+  .hero-container p {
     margin-top: 10px;
     font-size: 0.7rem;
   }
-  .nav-container-2 h1 {
+  .hero-container h1 {
     display: flex;
-    font-size: 1.1rem;
+
     gap: 0.3rem;
     margin: 0 auto;
     justify-content: center;
@@ -688,23 +660,23 @@ header {
     height: auto;
     margin-top: 100px;
   }
-  .nav-container-2 img {
+  .hero-container img {
     width: 80%;
     max-height: 400px;
     width: 300px;
     border-radius: 100px;
     margin-top: -80px;
-
     object-fit: contain;
   }
-  .nav-container-2 button {
+
+  .hero-container button {
     font-size: 0.9rem;
     margin-top: 12px;
     padding: 10px;
     width: 100%;
   }
 
-  .nav-container-2 button:hover {
+  .hero-container button:hover {
     background-color: rgb(180, 130, 95);
     transition-delay: 300ms;
     transform: scale(1.05);
@@ -713,6 +685,7 @@ header {
     justify-content: center;
     margin: 2rem auto;
   }
+
   .about-shelter {
     /* min-width: 350px; */
     justify-content: center;
@@ -754,7 +727,6 @@ header {
 
   .before-footer-contents {
     margin-bottom: 0rem;
-    font-family: Arial, Helvetica, sans-serif;
     text-align: center;
   }
 
@@ -770,7 +742,7 @@ header {
   .footer-container {
     flex-direction: column;
     padding: 2rem;
-    color: white;
+    color: var(--text-color);
   }
 
   .footer-contents h1 {
@@ -783,7 +755,9 @@ header {
   .footer-social a {
     color: #ecf0f1;
     font-size: 1.3rem;
-    transition: color 0.3s ease, transform 0.3s ease;
+    transition:
+      color 0.3s ease,
+      transform 0.3s ease;
   }
 
   .footer-bottom {
