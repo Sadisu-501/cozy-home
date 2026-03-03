@@ -131,31 +131,25 @@ nav {
   justify-content: space-between;
   gap: 5rem;
   padding: 2rem 3rem;
-  /* margin: 5rem auto; */
+  margin: 5rem 0;
 }
 .about-image {
   background-color: #f39c12;
   border-radius: 50px 100px;
-  box-shadow: 0px 6px rgba(180, 130, 95, 0.5);
+  box-shadow: 0px 6px rgba(180, 130, 95, 0.3);
   height: 300px;
 }
 .about-image img {
   padding: 0 5rem;
   margin: 0 auto;
 }
-.about-container h2 {
-  font-size: 1.5rem;
-  letter-spacing: 0.03rem;
-  margin-bottom: 15px;
-}
 
 .about-shelter {
   background-color: #807272;
   border-radius: 20px;
-  box-shadow: 10px 8px rgba(180, 130, 95, 0.5);
+  box-shadow: 10px 8px rgba(180, 130, 95, 0.3);
   padding: 2rem;
-  font-family: var(--primary-font);
-  color: #fff;
+  color: var(--dark-text-color);
   max-width: 800px;
   margin: 0 auto;
 }
@@ -170,6 +164,7 @@ nav {
   display: block;
   font-size: 1.2rem;
   color: #caad0a;
+  font-family: "Courier New", Courier, monospace;
   margin-top: 0.5rem;
 }
 
@@ -178,71 +173,15 @@ nav {
   margin-bottom: 1rem;
 }
 
+/* Main section */
 .body-container {
   background-color: #38281f;
-  padding: 3rem 5rem;
 }
 .body-container h2 {
   text-align: center;
   margin: 2rem auto;
   font-family: var(--primary-font);
   color: #fff;
-}
-.body-contents {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 2rem;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.dog-card {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  position: relative;
-  width: 200px;
-}
-
-.dog-image {
-  position: relative;
-  width: 100%;
-}
-
-.dog-image img {
-  width: 100%;
-  border-radius: 10px;
-  box-shadow: 0 2px 6px rgba(180, 130, 95, 0.9);
-}
-.dog-image img:hover {
-  transform: scale(1.1);
-  border-radius: 100px;
-  transition-delay: 300ms;
-}
-.dog-name {
-  position: absolute;
-  left: 50%;
-  transform: translate(-50%);
-  color: white;
-  font-weight: bold;
-  font-size: 1.2rem;
-  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
-  pointer-events: none;
-  justify-content: center;
-  text-align: center;
-}
-
-.dog-card button {
-  margin-top: 2rem;
-  background-color: rgb(213, 173, 143);
-  border: none;
-  padding: 0.5rem 1rem;
-  border-radius: 20px;
-  cursor: pointer;
-  box-shadow: 0 2px 6px rgba(180, 130, 95, 0.5);
-  transition:
-    background-color 300ms ease,
-    transform 200ms ease;
 }
 
 .dog-card button:hover {
@@ -251,6 +190,7 @@ nav {
   transform: scale(1.05);
 }
 
+/* main contents */
 .div-title {
   text-align: center;
   margin: auto;
