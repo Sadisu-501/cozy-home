@@ -547,7 +547,6 @@ img:hover {
   .about-container {
     display: flex;
     flex-direction: column;
-    margin: 3rem;
   }
   .about-image {
     margin-bottom: 100px;
@@ -555,14 +554,7 @@ img:hover {
   .items-container img {
     width: 50px;
   }
-  .items-container {
-    gap: 4rem;
-  }
 
-  .before-footer-container {
-    margin-bottom: 0px;
-    justify-content: center;
-  }
   .before-footer-img img {
     width: 300px;
   }
@@ -571,11 +563,10 @@ img:hover {
 /* mobile view */
 @media screen and (max-width: 480px) {
   nav {
-    height: 100vh;
+    height: 90vh;
   }
   .menu-image img {
     width: 300px;
-    margin-top: 0;
   }
   .hero-container {
     flex-direction: column-reverse;
@@ -626,6 +617,10 @@ img:hover {
   }
   .about-image img {
     width: 330px;
+  }
+  .div-title h1,
+  .main-container h2 {
+    font-size: 1rem;
   }
 
   .footer-container {
