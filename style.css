@@ -38,8 +38,14 @@ a,
 button,
 .card,
 .main-card,
-.items {
+.items,
+img {
   transition: all 0.5s ease;
+  cursor: pointer;
+}
+
+img:hover {
+  transform: scale(1.1);
 }
 
 /*  Nav containing links and logo*/
@@ -140,7 +146,7 @@ button,
   justify-content: space-between;
   gap: 5rem;
   padding: 2rem 3rem;
-  margin: 5rem 0;
+  margin: 200px 0;
 }
 .about-image {
   background-color: #f39c12;
@@ -250,7 +256,6 @@ button,
   grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
   gap: 4rem;
   margin-bottom: 2rem;
-  cursor: pointer;
 }
 .items {
   display: flex;
@@ -398,6 +403,21 @@ button,
   text-align: center;
   font-size: 0.6rem;
   color: #bdc3c7;
+}
+
+.slide-up {
+  animation: slideUp 0.6s ease-out forwards;
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 
 /*responsive design for large devices*/
