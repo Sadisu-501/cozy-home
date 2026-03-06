@@ -559,7 +559,7 @@ img:hover {
 /* mobile view */
 @media screen and (max-width: 480px) {
   nav {
-    height: 90vh;
+    height: 80vh;
   }
   .menu-image img {
     width: 300px;
