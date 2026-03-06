@@ -284,10 +284,6 @@ img:hover {
   margin: 0 auto;
 }
 
-.before-footer-img {
-  margin: 2rem;
-}
-
 .before-footer-contents {
   text-align: center;
 }
@@ -593,7 +589,7 @@ img:hover {
     border-radius: 70px;
     width: 300px;
     height: auto;
-    margin-top: 70px;
+    margin-top: 90px;
     margin-bottom: 2rem;
   }
   .hero-container img {
